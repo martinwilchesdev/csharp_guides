@@ -15,7 +15,7 @@ string[] studentNames = new string[] {"Sophia", "Andrew", "Logan", "Emma"};
 int[] studentScores = new int[10];
 string currentStudentLetterGrade = "";
 
-Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Student\t\tExam Score\t\tOverall\t\tGrade\t\tExtra Credit\n");
 
 foreach(string name in studentNames) {
     if (name == "Sophia")
@@ -24,25 +24,39 @@ foreach(string name in studentNames) {
         studentScores = andrewScores;
     else if (name == "Logan")
         studentScores = loganScores;
-    else
+    else if (name == "Emma")
         studentScores = emmaScores;
 
-    int sumAssingmentScores = 0;
+    decimal sumAssingmentScores = 0;
+    int sumCreditsScores = 0;
+    int sumExamScores = 0;
+
+    decimal currentExtraCreditPoints;
     decimal currentStudentGrade;
+    decimal currentExtraCredit;
+    decimal currentExamScore;
 
     int gradedAssignmentsCounter = 0;
+    int creditsCounter = 0;
 
     foreach(int score in studentScores) {
-        // add the exam score to the sum
+        // add the exam score with extra credits to the sum
         if (gradedAssignmentsCounter >= currentAssignments) {
-            sumAssingmentScores += score / 10;
+            sumAssingmentScores += (decimal)score / 10;
+            sumCreditsScores += score;
+            creditsCounter++;
         } else {
+            // add the exam score to the sum
             sumAssingmentScores += score;
+            sumExamScores += score;
         }
         gradedAssignmentsCounter++;
     }
 
+    currentExtraCreditPoints = ((decimal)sumCreditsScores / 10) / currentAssignments;
     currentStudentGrade = (decimal)sumAssingmentScores / currentAssignments;
+    currentExtraCredit = (decimal)sumCreditsScores / creditsCounter;
+    currentExamScore = (decimal)sumExamScores / currentAssignments;
 
     if (currentStudentGrade >= 97)
         currentStudentLetterGrade = "A+";
@@ -82,7 +96,7 @@ foreach(string name in studentNames) {
     else
         currentStudentLetterGrade = "F";
 
-    Console.WriteLine($"{name}:\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+    Console.WriteLine($"{name}:\t\t{currentExamScore}\t\t\t{currentStudentGrade}\t\t{currentStudentLetterGrade}\t\t{currentExtraCredit} ({currentExtraCreditPoints} pts)");
 }
 
 Console.WriteLine("Press the Enter key to continue");
