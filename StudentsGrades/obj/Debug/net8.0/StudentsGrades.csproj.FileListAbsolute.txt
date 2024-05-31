@@ -1,0 +1,15 @@
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\bin\Debug\net8.0\StudentsGrades.exe
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\bin\Debug\net8.0\StudentsGrades.deps.json
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\bin\Debug\net8.0\StudentsGrades.runtimeconfig.json
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\bin\Debug\net8.0\StudentsGrades.dll
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\bin\Debug\net8.0\StudentsGrades.pdb
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.sourcelink.json
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.dll
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\refint\StudentsGrades.dll
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.pdb
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\StudentsGrades.genruntimeconfig.cache
+C:\Users\marti\OneDrive\Documentos\guides\csharp_guides\StudentsGrades\obj\Debug\net8.0\ref\StudentsGrades.dll
