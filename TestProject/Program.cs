@@ -1,11 +1,9 @@
-﻿for(int i = 1; i <= 100; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-        Console.WriteLine($"FizzBuzz {i}");
-    } else if (i % 3 == 0) {
-        Console.WriteLine($"Fizz {i}");
-    } else if (i % 5 == 0) {
-        Console.WriteLine($"Buzz {i}");
-    } else {
-        Console.WriteLine(i);
-    }
-}
+﻿string? user_input;
+
+Console.WriteLine("Enter a valid number between 5 and 10");
+
+do {
+    user_input = Console.ReadLine();
+    int response = user_input.tryParse(user_input, out numericValue);
+    Console.WriteLine(response);
+} while(response == "");
